@@ -85,5 +85,16 @@ public class Main {
         if (isEighteenOrOver) {
             System.out.println("Client is 20");
         }
+
+        //operator challenge
+        double firstDouble = 20.00d;
+        double secondDouble = 80.00d;
+        double resultDouble = (firstDouble + secondDouble) * 100.00d;
+        double remainder = result % 40.00d;
+        boolean isZero = remainder == 0 ? true : false;
+        System.out.println("The remainder is equal to zero: " + isZero);
+        if (!isZero) {
+            System.out.println("Got some remainder");
+        }
     }
 }
