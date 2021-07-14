@@ -23,14 +23,20 @@ public class NumberOfDaysInMonth {
         if (year < 1 || year > 9999) {
             return -1;
         }
-        if (isLeapYear(year) == true) {
-            return 29;
-        }
-        else if (isLeapYear(year) == false) {
-            switch(month){
-                case 9:
-                    return 30;
+        if (month == 2) {
+            if (isLeapYear(year) == true) {
+                return 29;
             }
+            else {
+                return 28;
+            }
+        }
+        switch(month){
+            case 4: case 6: case 9: case 11:
+                return 30;
+
+            default:
+                return 31;
 
         }
     }
