@@ -14,13 +14,13 @@ public class PerfectNumber {
             }
         }
 
-        if (sum == 1) {
+        if (sum == number) {
             System.out.println("sum: " + sum);
-            return false;
+            return true;
         }
 
-        System.out.println("sum: " + sum);
-        return true;
+        System.out.println(number + " is not a perfect number");
+        return false;
 
     }
 
