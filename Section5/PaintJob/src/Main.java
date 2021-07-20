@@ -13,7 +13,7 @@ public class Main {
         PaintJob.getBucketCount(7.25, 4.3, 2.35);
 
         //third getBucketCount() tests
-        PaintJob.getBucketCount(3.4, 1.5);
+        PaintJob.getBucketCount(-3.4, 1.5);
         PaintJob.getBucketCount(6.26, 2.2);
         PaintJob.getBucketCount(3.26, 0.75);
     }
