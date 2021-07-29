@@ -26,6 +26,14 @@ public class Main {
         bankAccount.withdrawFunds(25);
         bankAccount.withdrawFunds(200);
 
+        VipCustomer customer1 = new VipCustomer();
+        System.out.println(customer1.getName());
+
+        VipCustomer customer2 = new VipCustomer("Bob", 25000.00);
+        System.out.println(customer2.getEmailAddress());
+
+        VipCustomer customer3 = new VipCustomer("Jane", 100.00, "jane@email.com");
+        System.out.println(customer3.getCreditLimit());
     }
 
 }

@@ -68,7 +68,7 @@ public class BankAccount {
     }
 
     public void withdrawFunds(int deduction) {
-        if (balance - deduction <= 0) {
+        if (balance - deduction < 0) {
             System.out.println("Only " + balance + " available. Withdrawal not processed.");
         } else {
             balance -= deduction;
