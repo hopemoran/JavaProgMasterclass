@@ -1,7 +1,8 @@
 db.define_table(
     "newbook",
     Field("user_id", "integer"),
-    Field("course_name", "string"),
-    Field("div_id", "string"),
-    Field("course_id", "string")
+    Field("book_name", "string"),
+    Field("book_id", "string"),
+    Field("book_forked_id", "string"),
+    Field("book_desc", "string")
 )
