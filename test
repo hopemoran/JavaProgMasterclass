@@ -1,8 +1,0 @@
-db.define_table(
-    "newbook",
-    Field("user_id", "integer"),
-    Field("book_name", "string"),
-    Field("book_id", "string"),
-    Field("book_forked_id", "string"),
-    Field("book_desc", "string")
-)
